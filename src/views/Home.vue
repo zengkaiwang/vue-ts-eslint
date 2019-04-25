@@ -15,6 +15,6 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
   }
 })
 export default class Home extends Vue {
-  priva2te name:string = "jack"
+  private name:string = 'jack'
 }
 </script>
