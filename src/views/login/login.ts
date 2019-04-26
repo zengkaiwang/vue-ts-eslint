@@ -6,6 +6,7 @@ import { LoginData } from '@/types/views/login.interface'
   components: {
   }
 })
+
 export default class About extends Vue {
   // Getter
   // @Getter author
