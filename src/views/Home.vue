@@ -16,5 +16,10 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 })
 export default class Home extends Vue {
   private name:string = 'name';
+
+  created () {
+    console.log(this.$router)
+    this.$router.push({ path: 'about' })
+  }
 }
 </script>
