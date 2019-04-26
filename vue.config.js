@@ -1,12 +1,12 @@
-const path = require('path');
-const Mocks = require('./mock.config');
-const CompressionPlugin = require('compression-webpack-plugin');
+const path = require('path')
+const Mocks = require('./mock.config')
+const CompressionPlugin = require('compression-webpack-plugin')
 const resolve = dir => {
-  return path.join(__dirname, dir);
-};
+  return path.join(__dirname, dir)
+}
 
 // 线上打包路径，请根据项目实际线上情况
-const BASE_URL = process.env.NODE_ENV === 'production' ? '/' : '/';
+const BASE_URL = process.env.NODE_ENV === 'production' ? '/' : '/'
 
 module.exports = {
   baseUrl: BASE_URL,
@@ -19,7 +19,7 @@ module.exports = {
     // 配置路径别名
     config.resolve.alias
       .set('@', resolve('src'))
-      .set('_c', resolve('src/components'));
+      .set('_c', resolve('src/components'))
   },
   css: {
     modules: false, // 启用 CSS modules
@@ -48,7 +48,7 @@ module.exports = {
             deleteOriginalAssets: false // 不删除源文件
           })
         ]
-      };
+      }
     }
   }
-};
+}

@@ -1,8 +1,7 @@
 <template>
 	<div class='login-wrap'>
-		{{data.pageName}}
+		<span>{{data.pageName}}</span>
 		<div>
-			<!-- <Test></Test> -->
 			<el-button type='primary'>主要按钮</el-button>
 		</div>
 	</div>
