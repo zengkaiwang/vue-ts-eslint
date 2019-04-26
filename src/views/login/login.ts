@@ -13,7 +13,7 @@ export default class About extends Vue {
   // @Action GET_DATA_ASYN
   // data
   data: LoginData = {
-    pageName: 'login'
+    pageName: "login"
   }
 
   created () {
