@@ -7,7 +7,7 @@
 export default [
   {
     path: '/',
-    redirect: '/login'
+    redirect: '/index'
   },
   {
     path: '/home',
