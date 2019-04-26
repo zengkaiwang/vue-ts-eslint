@@ -12,7 +12,6 @@ export default class About extends Vue {
   // @Getter author
   // Action
   // @Action GET_DATA_ASYN
-  // data
   data: LoginData = {
     pageName: 'login'
   }

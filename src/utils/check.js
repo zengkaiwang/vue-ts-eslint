@@ -1,28 +1,6 @@
 const exec = require('child_process').exec
 const CLIEngine = require('eslint').CLIEngine
-const cli = new CLIEngine({
-  root: true,
-  env: {
-    node: true
-  },
-  parser: 'babel-eslint',
-  'extends': [
-    'plugin:vue/essential',
-    '@vue/standard',
-    '@vue/typescript'
-  ],
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-tabs': 0
-  },
-  parserOptions: {
-    'ecmaFeatures': {
-      'legacyDecorators': true
-    }
-    // parser: '@typescript-eslint/parser'
-  }
-})
+const cli = new CLIEngine({})
 
 function getErrorLevel (number) {
   switch (number) {
