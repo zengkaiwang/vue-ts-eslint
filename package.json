@@ -10,7 +10,6 @@
     "pre-lint": "node ./src/utils/check.js"
   },
   "pre-commit": [
-    "pre-lint"
   ],
   "dependencies": {
     "core-js": "^2.6.5",
@@ -19,7 +18,8 @@
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.6.0",
@@ -30,12 +30,14 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/eslint-config-typescript": "^4.0.0",
     "babel-eslint": "^10.0.1",
+    "compression-webpack-plugin": "^2.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "pre-commit": "^1.2.2",
     "typescript": "^3.4.3",
+    "typescript-eslint-parser": "^22.0.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
