@@ -10,6 +10,7 @@
     "pre-lint": "node ./src/utils/check.js"
   },
   "pre-commit": [
+    "pre-lint"
   ],
   "dependencies": {
     "core-js": "^2.6.5",
