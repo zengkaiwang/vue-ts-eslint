@@ -21,7 +21,7 @@ function filter (arr) {
 }
 
 let pass = 0
-exec('git diff --cached --name-only | grep -E ".(js|vue)$"', (error, stdout) => {
+exec('git diff --cached --name-only | grep -E ".(ts|vue)$"', (error, stdout) => {
   if (stdout.length) {
     let array = stdout.split('\n')
     array = filter(array)
