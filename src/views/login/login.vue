@@ -1,6 +1,6 @@
 <template>
 	<div class='login-wrap'>
-		<span>{{data.pageName}}</span>
+		{{data.pageName}}
 		<div>
 			<el-button type='primary'>主要按钮</el-button>
 		</div>
