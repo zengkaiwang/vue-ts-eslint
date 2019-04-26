@@ -36,7 +36,7 @@ exec('git diff --cached --name-only | grep -E ".(ts|vue)$"', (error, stdout) => 
         console.log(result.filePath)
         result.messages.forEach((obj) => {
           const level = getErrorLevel(obj.severity)
-          console.log(`   ${obj.line}:${obj.column}  ${level}  ${obj.message}  ${obj.ruleId}`)
+          console.log(`   ${obj.line}:${obj.column}  ${level}  ${obj.message}  ${obj.ruleId} ${obj.fix}`)
           pass = 1
         })
       }
