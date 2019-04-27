@@ -5,9 +5,8 @@ const cli = new CLIEngine({
   env: {
     node: true
   },
-  parser: 'babel-eslint',
   'extends': [
-    // 'plugin:vue/essential',
+    'plugin:vue/essential',
     '@vue/standard',
     '@vue/typescript'
   ],
@@ -17,10 +16,7 @@ const cli = new CLIEngine({
     'no-tabs': 0
   },
   parserOptions: {
-    'ecmaFeatures': {
-      'legacyDecorators': true
-    }
-    // parser: '@typescript-eslint/parser'
+    parser: '@typescript-eslint/parser'
   }
 })
 
