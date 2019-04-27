@@ -5,6 +5,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import '@/assets/less/common.less'
+import '@/assets/less/variables.less'
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 

@@ -16,7 +16,7 @@
 <script lang='ts'>
 import { Component, Vue, Prop, Emit } from 'vue-property-decorator'
 import { Getter, Action, Mutation } from 'vuex-class'
-// import * as IndexApi from '@/api/index'
+import * as IndexApi from '@/api/index'
   // import {  } from '@/components' // 组件
   @Component({})
 export default class Nav extends Vue {
@@ -24,10 +24,10 @@ export default class Nav extends Vue {
   // @Mutation UPDATE_STATE:any
   public navList: object[] = [];
   mounted () {
-    // IndexApi.getNav().then((data:any) => {
-    //   console.log(data)
-    //   this.navList = data.data.list
-    // })
+    IndexApi.getNav().then((data:any) => {
+      console.log(data)
+      this.navList = data.data.list
+    })
   }
   checkrouter (item:any) {
     // this.UPDATE_STATE({ author: item.name })
