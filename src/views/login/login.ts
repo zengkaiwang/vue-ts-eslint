@@ -8,7 +8,8 @@ import { LoginData } from '@/types/views/login.interface'
 })
 
 export default class About extends Vue {
-  private name:string = 'jack';
+  // private name:string = "jack"
+  // private user:string = "jack"
   // Getter
   // @Getter author
   // Action
@@ -32,6 +33,6 @@ export default class About extends Vue {
 
   // 初始化函数
   init () {
-    console.log(111)
+    // console.log(111)
   }
 }
