@@ -8,6 +8,7 @@ import { LoginData } from '@/types/views/login.interface'
 })
 
 export default class About extends Vue {
+  private name:string = 'jack';
   // Getter
   // @Getter author
   // Action
