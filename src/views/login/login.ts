@@ -33,6 +33,6 @@ export default class About extends Vue {
 
   // 初始化函数
   init () {
-    // console.log(111)
+    console.log(111)
   }
 }

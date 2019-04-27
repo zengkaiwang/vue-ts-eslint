@@ -17,6 +17,6 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
     // 设置要检测的代码的模块规范
-    sourceType: 'module'
+    // sourceType: 'module'
   }
 }
