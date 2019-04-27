@@ -47,6 +47,6 @@ exec('git diff --cached --name-only | grep -E ".(ts|vue)$"', (error, stdout) => 
     process.exit(pass)
   }
   if (error) {
-    console.log('wangzk', error)
+    // console.log('wangzk', error)
   }
 })

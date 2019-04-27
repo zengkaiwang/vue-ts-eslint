@@ -9,5 +9,5 @@
 <script lang='ts' src='./dashload.ts'></script>
 
 <style lang='less'>
-  @import './dashload.less';
+  @import './dashload.less'
 </style>
