@@ -20,7 +20,6 @@ import * as IndexApi from '@/api/index'
   // import {  } from '@/components' // 组件
   @Component({})
 export default class Nav extends Vue {
-  private myThis:any = this
   // @Mutation UPDATE_STATE:any
   public navList: object[] = [];
   mounted () {
@@ -32,7 +31,7 @@ export default class Nav extends Vue {
   checkrouter (item:any) {
     // this.UPDATE_STATE({ author: item.name })
     console.log(item.url)
-    this.myThis.$router.push({ path: item.url })
+    this.$router.push({ path: item.url })
   }
 }
 </script>
