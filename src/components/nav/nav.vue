@@ -24,10 +24,10 @@ export default class Nav extends Vue {
   // @Mutation UPDATE_STATE:any
   public navList: object[] = [];
   mounted () {
-    // IndexApi.getNav().then((data:any) => {
-    //   console.log(data)
-    //   this.navList = data.data.list
-    // })
+    IndexApi.getNav().then((data:any) => {
+      console.log(data)
+      this.navList = data.data.list
+    })
   }
   checkrouter (item:any) {
     // this.UPDATE_STATE({ author: item.name })

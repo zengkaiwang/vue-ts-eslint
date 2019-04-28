@@ -1,5 +1,5 @@
 const path = require('path')
-// const Mocks = require('./mock.config')
+const Mocks = require('./mock.config')
 const CompressionPlugin = require('compression-webpack-plugin')
 const resolve = dir => {
   return path.join(__dirname, dir)
@@ -46,7 +46,7 @@ module.exports = {
     loaderOptions: {} // css预设器配置项
   },
   devServer: {
-    // before: Mocks
+    before: Mocks
     // proxy: {
     //   '/api': {
     //     target: `http://${testMachine}.suanshubang.com`,
