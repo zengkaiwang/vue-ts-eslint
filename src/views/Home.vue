@@ -14,5 +14,10 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
     HelloWorld
   }
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  created () {
+    this.$message('这是一条消息提示')
+    this.$router.push({ path: 'about' })
+  }
+}
 </script>
