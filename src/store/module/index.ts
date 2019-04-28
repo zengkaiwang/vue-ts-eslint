@@ -3,7 +3,7 @@ import { GetterTree, MutationTree, ActionTree } from 'vuex'
 // import * as IndexApi from '@/api/index'
 
 const state: IndexState = {
-  author: '仪表盘'
+  author: '仪表盘11'
 }
 
 // 强制使用getter获取state
