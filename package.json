@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "pre-lint": "node ./src/utils/check.js"
+    "pre-lint": "node ./src/utils/check.js",
+    "tep": "node scripts/template",
+    "com": "node scripts/component"    
   },
   "pre-commit": [
     "pre-lint"
