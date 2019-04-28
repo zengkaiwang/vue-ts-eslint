@@ -19,7 +19,13 @@ exec('git diff --cached --name-only | grep -E ".(ts|vue)$"', (error, stdout) => 
   if (stdout.length) {
     const array = stdout.split('\n')
     array.pop()
-    const results = cli.executeOnFiles(array).results
+    let results = []
+    try {
+      results = cli.executeOnFiles(array).results
+    } catch (err) {
+      console.log('未执行eslint校验，直接提交成功')
+      process.exit(0)
+    }    
     let errorCount = 0
     let warningCount = 0
     results.forEach((result) => {
