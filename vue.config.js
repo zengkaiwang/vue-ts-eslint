@@ -1,6 +1,6 @@
 const path = require('path')
 // const Mocks = require('./mock.config')
-const CompressionPlugin = require("compression-webpack-plugin")
+const CompressionPlugin = require('compression-webpack-plugin')
 const resolve = dir => {
   return path.join(__dirname, dir)
 }
@@ -62,12 +62,12 @@ module.exports = {
         plugins: [
           new CompressionPlugin({
             test: /\.js$|\.ts$|\.html$|.\css|.\scss/, // 匹配文件名
-            threshold: 10240,// 对超过10k的数据压缩
+            threshold: 10240, // 对超过10k的数据压缩
             algorithm: 'gzip', 
             deleteOriginalAssets: false // 不删除源文件
           })
         ]
       }
     }
-  },
+  }
 }

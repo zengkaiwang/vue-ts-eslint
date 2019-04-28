@@ -1,6 +1,6 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { Getter, Action } from 'vuex-class'
-// import { IndexData } from '@/types/views/index.interface'
+import { IndexData } from '@/types/views/index.interface'
 import Nav from '@/components/nav/nav.vue'
 import Header from '@/components/header/header.vue'
 @Component({
@@ -10,7 +10,6 @@ import Header from '@/components/header/header.vue'
   }
 })
 export default class About extends Vue {
-  private myThis:any = this
   // Getter
   // @Getter author
 
@@ -18,9 +17,9 @@ export default class About extends Vue {
   // @Action GET_DATA_ASYN
 
   // data
-  // data: IndexData = {
-  //   pageName: 'index'
-  // }
+  data: IndexData = {
+    pageName: 'index'
+  }
   public aaa: string = '';
   public bbb: string = 'bbbbbbbbb';
   created () {
@@ -42,13 +41,12 @@ export default class About extends Vue {
   }
 
   test () {
-    this.myThis.$message({
+    this.$message({
       message: '恭喜你，这是一条成功消息',
       type: 'success'
     })
   }
   // 初始化函数
   init () {
-    //
   }
 }

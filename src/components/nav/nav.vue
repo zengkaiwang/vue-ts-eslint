@@ -16,9 +16,10 @@
 <script lang='ts'>
 import { Component, Vue, Prop, Emit } from 'vue-property-decorator'
 import { Getter, Action, Mutation } from 'vuex-class'
-// import * as IndexApi from '@/api/index'
-  // import {  } from '@/components' // 组件
-  @Component({})
+import * as IndexApi from '@/api/index'
+
+@Component({})
+
 export default class Nav extends Vue {
   // @Mutation UPDATE_STATE:any
   public navList: object[] = [];

@@ -1,6 +1,6 @@
 import { IndexState } from '@/types/views/index.interface'
 import { GetterTree, MutationTree, ActionTree } from 'vuex'
-// import * as IndexApi from '@/api/index'
+import * as IndexApi from '@/api/index'
 
 const state: IndexState = {
   author: '仪表盘11'
@@ -27,9 +27,9 @@ const actions: ActionTree<IndexState, any> = {
     commit('UPDATE_STATE', data)
   },
   GET_DATA_ASYN() {
-    // IndexApi.getNav().then((data:any) => {
-    //   console.log(data)
-    // })
+    IndexApi.getNav().then((data:any) => {
+      console.log(data)
+    })
   }
 }
 

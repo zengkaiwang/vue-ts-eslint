@@ -1,0 +1,55 @@
+{
+    "errNo": 0,
+    "errstr": "success",
+    "data": {
+      "list": [
+        {
+          "icon":"el-icon-tickets",
+          "name":"仪表盘11",
+          "id":1,
+          "url": "dashload"
+        },
+        {
+          "icon":"el-icon-news",
+          "name":"资产",
+          "id":2,
+          "url": "demo"
+        },
+        {
+          "icon":"el-icon-message",
+          "name":"资产监视",
+          "id":3,
+          "url": ""
+        },
+        {
+          "icon":"el-icon-date",
+          "name":"资产健康",
+          "id":4,
+          "url": ""
+        },
+        {
+          "icon":"el-icon-printer",
+          "name":"服务",
+          "id":5,
+          "url": ""
+        },
+        {
+          "icon":"el-icon-menu",
+          "name":"用户及权限",
+          "url": ""
+        },
+        {
+          "icon":"el-icon-view",
+          "name":"可视化",
+          "id":6,
+          "url": ""
+        },
+        {
+          "icon":"el-icon-setting",
+          "name":"设置",
+          "id":7,
+          "url": ""
+        }
+      ]
+    }
+  }
