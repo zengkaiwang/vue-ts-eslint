@@ -15,16 +15,16 @@ export default [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
   },
-  // {
-  //   path: '/login',
-  //   name: 'login',
-  //   component: () => import('@/views/login/login.vue'),
-  //   meta: {
-  //     icon: '',
-  //     keepAlive: true,
-  //     title: 'login'
-  //   }
-  // },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login/login.vue'),
+    meta: {
+      icon: '',
+      keepAlive: true,
+      title: 'login'
+    }
+  },
   {
     path: '/index',
     name: 'index',
@@ -45,17 +45,17 @@ export default [
           keepAlive: true,
           title: 'dashload'
         }
+      },
+      {
+        name: 'demo',
+        path: 'demo',
+        component: () => import('@/views/demo/demo.vue'),
+        meta: {
+          icon: '',
+          // keepAlive: true,
+          title: 'demo'
+        }
       }
-      // {
-      //   name: 'demo',
-      //   path: 'demo',
-      //   component: () => import('@/views/demo/demo.vue'),
-      //   meta: {
-      //     icon: '',
-      //     // keepAlive: true,
-      //     title: 'demo'
-      //   }
-      // }
     ]
   }  
 ]
