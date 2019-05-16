@@ -108,10 +108,11 @@ const Api = (() => {
   const requestList: any = requestConfig
   const fun = (opts: AxiosRequestConfig | string) => {
     return async (data = {}, method: Methods = 'GET') => {
-      if (!token) {
-        console.error('No Token')
-        return router.replace({ name: 'login' })
-      }
+      // 暂时关闭token校验
+      // if (!token) {
+      //   console.error('No Token')
+      //   return router.replace({ name: 'login' })
+      // }
       const newOpts = conbineOptions(opts, data, method)
       const res = await HTTP.request(newOpts)
       return res

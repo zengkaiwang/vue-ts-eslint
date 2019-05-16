@@ -1,6 +1,5 @@
 <template>
   <div class="wrap">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
   </div>
 </template>
 
@@ -10,15 +9,13 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
 @Component({
   components: {
-    HelloWorld
   }
 })
-export default class Home extends Vue {
+export default class MyElement extends Vue {
   private name:string = 'jack'
   
   created () {
     // this.$message('这是一条消息提示')
-    // this.$router.push({ path: 'about' })
   }
 }
 </script>
