@@ -1,13 +1,30 @@
 <template>
-  <div class='dashload-wrap'>
-    {{ mynum}}
-    <el-button type="primary" @click="add">主要按钮</el-button>
-    <!-- <svgicon icon="age" width="200" height="200" color="#42b983 #35495e"></svgicon> -->
+  <div class="dashload-wrap">
+    <div class="cards"></div>
   </div>
 </template>
 
-<script lang='ts' src='./dashload.ts'></script>
+<script lang='ts'>
+import { Component, Vue } from 'vue-property-decorator'
+import { Getter, Action } from 'vuex-class'
 
-<style lang='less'>
-  @import './dashload.less'
+@Component({})
+export default class About extends Vue {
+  created() {
+    this.$message({
+      message: '恭喜你，这是一条成功消息',
+      type: 'success'
+    })
+  }
+}
+</script>
+
+<style lang='less' scoped>
+.dashload-wrap {
+  width: 100%;
+  .aaa {
+    font-size: 30px;
+    color: red;
+  }
+}
 </style>
