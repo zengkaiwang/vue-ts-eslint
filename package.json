@@ -11,9 +11,7 @@
     "tep": "node scripts/template",
     "com": "node scripts/component"
   },
-  "pre-commit": [
-    "pre-lint"
-  ],
+  "pre-commit": [],
   "dependencies": {
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
