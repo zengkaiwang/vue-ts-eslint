@@ -7,7 +7,12 @@
 export default [
   {
     path: '/',
-    redirect: '/index'
+    redirect: '/tree'
+  },
+  {
+    path: '/tree',
+    name: 'tree',
+    component: () => import('@/views/Tree.vue')
   },
   {
     path: '/home',

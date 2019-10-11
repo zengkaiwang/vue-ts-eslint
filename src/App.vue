@@ -1,8 +1,21 @@
 <template>
   <div id="app">
     <!-- <div id="nav"> -->
-    <!-- <router-link to="/">Home</router-link>-->
-    <!-- <router-link to="/about">About</router-link> -->
+    <el-button>
+      <router-link to="/">Home</router-link>
+    </el-button>
+    <el-button>
+      <router-link to="/about">About</router-link>
+    </el-button>
+    <el-button>
+      <router-link to="/index">dashload</router-link>
+    </el-button>
+    <el-button>
+      <router-link to="/tree">树结构</router-link>
+    </el-button>
+    <el-button>
+      <router-link to="/index/demo">demo</router-link>
+    </el-button>
     <!-- </div> -->
     <router-view />
   </div>
