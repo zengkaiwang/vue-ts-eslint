@@ -12,7 +12,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // 关闭制表符
-    'no-tabs': 0
+    'no-tabs': 0,
+    'space-before-function-paren': 'off'
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

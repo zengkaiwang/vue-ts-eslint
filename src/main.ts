@@ -8,6 +8,9 @@ import store from './store'
 import '@/assets/less/common.less'
 import '@/assets/less/variables.less'
 
+// 自定义字体图标
+import '@/assets/iconfont/style.css'
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 

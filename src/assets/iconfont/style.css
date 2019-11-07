@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'lenovo-icomoon';
+  src:  url('fonts/icomoon.eot?m9wp60');
+  src:  url('fonts/icomoon.eot?m9wp60#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?m9wp60') format('truetype'),
+    url('fonts/icomoon.woff?m9wp60') format('woff'),
+    url('fonts/icomoon.svg?m9wp60#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lenovo-icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-caret-right:before {
+  content: "\e900";
+}
+.icon-caret-up:before {
+  content: "\e901";
+}
+.icon-chevron:before {
+  content: "\e902";
+}
+.icon-icon-admin-o:before {
+  content: "\e903";
+}
