@@ -5,6 +5,9 @@
       <router-link to="/demo">demo</router-link>
     </el-button>
     <el-button>
+      <router-link to="/print">打印</router-link>
+    </el-button>
+    <el-button>
       <router-link to="/home">Home</router-link>
     </el-button>
     <el-button>

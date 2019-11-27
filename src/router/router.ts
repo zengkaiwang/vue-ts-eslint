@@ -15,6 +15,11 @@ export default [
     component: () => import('@/views/Tree.vue')
   },
   {
+    path: '/print',
+    name: 'print',
+    component: () => import('@/views/Print.vue')
+  },
+  {
     path: '/demo',
     name: 'demo',
     component: () => import('@/views/Demo.vue')

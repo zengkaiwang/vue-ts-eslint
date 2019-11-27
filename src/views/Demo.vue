@@ -1,22 +1,17 @@
 <template>
-  <div>
-    dfdfdfdf
-  </div>
+  <div>demo</div>
 </template>
 
 <script>
 export default {
-  components: {
-
-  },
+  components: {},
   data() {
-    return {
-
-    }
-  }
+    return {}
+  },
+  created() {},
+  methods: {}
 }
 </script>
 
-<style lang="less">
-
+<style>
 </style>
