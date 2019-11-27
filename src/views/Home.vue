@@ -19,7 +19,7 @@ export default class Home extends Vue {
 
   created () {
     console.log(this.$router)
-    this.$message('这是一条消息提示')
+    // this.$message('这是一条消息提示')
     // this.$router.push({ path: 'about' })
   }
 }

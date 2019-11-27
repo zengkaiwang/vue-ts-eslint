@@ -2,7 +2,10 @@
   <div id="app">
     <!-- <div id="nav"> -->
     <el-button>
-      <router-link to="/">Home</router-link>
+      <router-link to="/demo">demo</router-link>
+    </el-button>
+    <el-button>
+      <router-link to="/home">Home</router-link>
     </el-button>
     <el-button>
       <router-link to="/about">About</router-link>
@@ -14,7 +17,7 @@
       <router-link to="/tree">树结构</router-link>
     </el-button>
     <el-button>
-      <router-link to="/index/demo">demo</router-link>
+      <router-link to="/index/treeTable">treeTable</router-link>
     </el-button>
     <!-- </div> -->
     <router-view />

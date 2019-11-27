@@ -7,12 +7,17 @@
 export default [
   {
     path: '/',
-    redirect: '/tree'
+    redirect: '/demo'
   },
   {
     path: '/tree',
     name: 'tree',
     component: () => import('@/views/Tree.vue')
+  },
+  {
+    path: '/demo',
+    name: 'demo',
+    component: () => import('@/views/Demo.vue')
   },
   {
     path: '/home',
@@ -22,9 +27,6 @@ export default [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '@/views/About.vue')
   },
   {
@@ -49,8 +51,8 @@ export default [
     },
     children: [
       {
-        name: 'dashload',
         path: 'dashload',
+        name: 'dashload',
         component: () => import('@/views/dashload/dashload.vue'),
         meta: {
           icon: '',
@@ -59,9 +61,9 @@ export default [
         }
       },
       {
-        name: 'demo',
-        path: 'demo',
-        component: () => import('@/views/demo/demo.vue'),
+        path: 'treeTable',
+        name: 'treeTable',
+        component: () => import('@/views/tree-table/Index.vue'),
         meta: {
           icon: '',
           // keepAlive: true,
