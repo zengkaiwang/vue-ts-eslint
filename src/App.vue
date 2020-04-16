@@ -1,31 +1,33 @@
 <template>
   <div id="app">
-    <!-- <div id="nav"> -->
-    <el-button>
-      <router-link to="/demo">demo</router-link>
-    </el-button>
-    <el-button>
-      <router-link to="/print">打印</router-link>
-    </el-button>
-    <el-button>
-      <router-link to="/home">Home</router-link>
-    </el-button>
-    <el-button>
-      <router-link to="/about">About</router-link>
-    </el-button>
-    <el-button>
-      <router-link to="/index">dashload</router-link>
-    </el-button>
-    <el-button>
-      <router-link to="/tree">树结构</router-link>
-    </el-button>
-    <el-button>
-      <router-link to="/index/treeTable">treeTable</router-link>
-    </el-button>
-    <!-- </div> -->
-    <router-view />
+    <el-container>
+      <el-aside width="220px" style="overflow:hidden;">
+        <Menu :defalutOpens="defalutOpens"></Menu>
+      </el-aside>
+
+      <el-main>
+        <router-view />
+      </el-main>
+    </el-container>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import Menu from '@/components/menu.vue'
+
+@Component({
+  components: {
+    Menu
+  }
+})
+export default class Home extends Vue {
+  public defalutOpens: any[] = ['2', '3']
+  // public defalutOpens: any[] = []
+
+  created() {}
+}
+</script>
 
 <style lang="less">
 #app {
@@ -43,6 +45,22 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+.el-container {
+  // align-items: center;
+  height: 100vh;
+
+  .el-aside {
+    height: 100%;
+    .el-menu {
+      height: 100%;
+    }
+  }
+
+  .el-main {
+    height: 100%;
+    background-color: pink;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
   </div>
 </template>
 
@@ -15,9 +15,9 @@ import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
   }
 })
 export default class Home extends Vue {
-  private name:string = 'name';
+  private name: string = 'name'
 
-  created () {
+  created() {
     console.log(this.$router)
     // this.$message('这是一条消息提示')
     // this.$router.push({ path: 'about' })

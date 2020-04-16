@@ -7,7 +7,7 @@
 export default [
   {
     path: '/',
-    redirect: '/demo'
+    redirect: '/about'
   },
   {
     path: '/tree',
@@ -20,9 +20,14 @@ export default [
     component: () => import('@/views/Print.vue')
   },
   {
-    path: '/demo',
-    name: 'demo',
-    component: () => import('@/views/Demo.vue')
+    path: '/gantt',
+    name: 'gantt',
+    component: () => import('@/views/gantt/Index.vue')
+  },
+  {
+    path: '/gantt02',
+    name: 'gantt02',
+    component: () => import('@/views/gantt/Index02.vue')
   },
   {
     path: '/home',
