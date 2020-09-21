@@ -7,7 +7,12 @@
 export default [
   {
     path: '/',
-    redirect: '/about'
+    redirect: '/home'
+  },
+  {
+    path: '/WechatLogin',
+    name: 'WechatLogin',
+    component: () => import('@/views/WechatLogin.vue')
   },
   {
     path: '/tree',

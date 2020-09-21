@@ -6,6 +6,8 @@
       </el-aside>
 
       <el-main>
+        <!-- <el-button>sfsfs</el-button> -->
+        <!-- <Button>源码按钮</Button> -->
         <router-view />
       </el-main>
     </el-container>
@@ -15,10 +17,12 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Menu from '@/components/menu.vue'
+import Button from '../node_modules/element-ui/packages/button/src/button.vue'
 
 @Component({
   components: {
-    Menu
+    Menu,
+    Button
   }
 })
 export default class Home extends Vue {
