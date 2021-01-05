@@ -13,7 +13,7 @@
   },
   "pre-commit": [],
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "dhtmlx-gantt": "^6.3.5",
     "element-ui": "^2.8.2",
